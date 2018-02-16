@@ -1,0 +1,164 @@
+html {
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin: 0px;
+}
+
+th {
+    background: #ddd;
+}
+
+.sidebar {
+    background: #212121;
+    color: #FFF;
+    float: left;
+    height: 100%;
+    padding: 12px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    position: fixed;
+}
+
+.sidebar-content {
+    width: 150px;
+}
+
+.sidebar-content .logo>img {
+    width: 120px;
+}
+
+.sidebar-content>ul {
+    padding: 0px;
+    align-self: center;
+    padding-top: auto;
+    align-items: left;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar-content>ul>li {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 10pt;
+    margin-bottom: 9pt;
+}
+
+.sidebar-content>ul>li>a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.sidebar-content>ul>li>a:hover {
+    color: #fff;
+}
+
+.sidebar-content>ul>li>ul {
+    margin: 0px;
+    padding: 3px;
+    padding-left: 12px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar-content>ul>li>ul>li>a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 9pt
+}
+
+.sidebar-content>ul>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.name {
+    margin-top: 10px;
+    color: #F0f0f0;
+}
+
+.version {
+    color: #aaa;
+    font-size: 8pt;
+}
+
+#content {
+    padding: 10px;
+    margin-left: 180px;
+}
+
+.topic {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: [col1-start] 50% [col2-start] 50%;
+}
+
+.topic-title {
+    font-size: 20pt;
+    margin-top: 15px;
+}
+
+.line {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1px;
+}
+
+@media only screen and (max-width: 700px) {
+    .topic {
+        display: block;
+        grid-template-columns: [col1-start] 50% [col2-start] 50%;
+    }
+    .sidebar {
+        visibility: hidden;
+    }
+    #content {
+        margin-left: 10px;
+    }
+}
+
+.github-button {
+    position: absolute;
+    color: #000;
+    text-decoration: none;
+    top: 15px;
+    right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    grid-column: col1-start / col2-start;
+}
+
+p {
+    color: #555;
+    font-size: 11pt;
+    text-align: justify;
+    line-height: 15pt;
+}
+
+pre {
+    background: #212121;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ddd;
+}
