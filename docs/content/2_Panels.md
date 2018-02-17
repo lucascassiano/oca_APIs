@@ -1,6 +1,6 @@
 ## Get All Panels
 ```
-GET HOST:PORT/api/v1/panel/
+GET oca.media.mit.edu/api/v1/panel/
 ```
 
 Example of response:
@@ -36,7 +36,7 @@ Example of response:
 
 ## Create Panel ```(Admin only)```
 ```
-POST localhost:3000/api/v1/dataset
+POST oca.media.mit.edu/api/v1/dataset
 ```
 
 Example of input
@@ -61,7 +61,7 @@ Example of response:
 
 ## Read Panel
 ```
-GET localhost:3000/api/v1/panel/$ID
+GET oca.media.mit.edu/api/v1/panel/$ID
 ```
 
 example of response
@@ -83,7 +83,7 @@ example of response
 
 ## Update Panel ```(Admin only)```
 ```
-PUT localhost:3000/api/v1/panel/$ID
+PUT oca.media.mit.edu/api/v1/panel/$ID
 ```
 
 example of response:
@@ -110,7 +110,7 @@ This will expose only the datasets visible for the developer. e.g. if the datase
 
 ## Get all visible datasets indexed to a specific panel
 ```
-GET localhost:3000/api/v1/$ID/datasets/
+GET oca.media.mit.edu/api/v1/$ID/datasets/
 ```
 
 example of response
